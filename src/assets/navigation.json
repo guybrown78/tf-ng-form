@@ -1,0 +1,18 @@
+[
+  {
+    "label":"Dashboard",
+    "title":"",
+    "hasSub":false,
+    "routerLink":"/home"
+  },
+  {
+    "routerLink":"/form",
+    "title":"Form input components",
+    "label":"Form Renderer Example"
+  },
+  {
+    "routerLink":"/form-default",
+    "title":"Form input components",
+    "label":"Form Renderer (Default data)"
+  }
+]

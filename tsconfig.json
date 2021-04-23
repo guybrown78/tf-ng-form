@@ -1,0 +1,37 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "tf-ng-core": [
+        "dist/tf-ng-core/tf-ng-core",
+        "dist/tf-ng-core"
+      ],
+      "tf-ng-form": [
+        "dist/tf-ng-form/tf-ng-form",
+        "dist/tf-ng-form"
+      ],
+      "tf-ng-nz": [
+        "dist/tf-ng-nz/tf-ng-nz",
+        "dist/tf-ng-nz"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false
+  }
+}

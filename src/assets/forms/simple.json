@@ -1,0 +1,79 @@
+{
+  "meta":{
+    "title":"Simple",
+    "version":"1",
+    "description":"Lorum ipsum ...",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"input",
+      "type":"input",
+      "templateOptions":{
+        "label":"My Input",
+        "placeholder":"Input placeholder",
+        "required":true,
+        "description":"%3Ch1%3EThe%20Input%21%3C%2Fh1%3E%0A%3Ch2%3EHow%20to%20use%20the%20input%3A%3C%2Fh2%3E%0A%3Cp%3EType%20with%20one%20finger%2C%20very%20carefully%2C%20one%20letter%20at%20a%20time%20to%20form%20a%20word%3C%2Fp%3E%0A%3Ch4%3E%3Cspan%20style%3D%22color%3A%20%23ff0000%3B%22%3ESome%20useful%20tips%3A%3C%2Fspan%3E%3C%2Fh4%3E%0A%3Cp%3ETry%20sticking%20your%20tongue%20out%20%3A%29%3C%2Fp%3E",
+        "tooltip":"Howdo, this is how you use a input"
+      }
+    },
+    {
+      "key":"textarea",
+      "type":"textarea",
+      "templateOptions":{
+        "label":"Textarea",
+        "placeholder":"Textarea placeholder",
+        "required":true
+      }
+    },
+    {
+      "key":"checkbox",
+      "type":"checkbox",
+      "templateOptions":{
+        "label":"Checkbox"
+      }
+    },
+    {
+      "key":"select",
+      "type":"select",
+      "templateOptions":{
+        "label":"Select",
+        "placeholder":"Select placeholder",
+        "required":true,
+        "options":[
+          {
+            "label":"Option 1",
+            "value":"1"
+          },
+          {
+            "label":"Option 2",
+            "value":"2"
+          },
+          {
+            "label":"Option 3",
+            "value":"3"
+          }
+        ]
+      }
+    },
+    {
+      "key":"radio",
+      "type":"radio",
+      "templateOptions":{
+        "label":"Radio",
+        "required":true,
+        "options":[
+          {
+            "label":"Option 1",
+            "value":"1"
+          },
+          {
+            "label":"Option 2",
+            "value":"2"
+          }
+        ]
+      }
+    }
+  ],
+  "model":{}
+}

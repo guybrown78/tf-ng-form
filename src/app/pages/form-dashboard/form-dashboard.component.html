@@ -1,0 +1,21 @@
+<tf-ng-card>
+  <tf-ng-card-content>
+    <span nz-typography class="blue">Select form data: </span>
+    <nz-select nzPlaceHolder="Select data..." [(ngModel)]="selectedDataType" (ngModelChange)="onChange($event)" >
+      <nz-option nzLabel="Simple" nzValue="simple"></nz-option>
+      <!-- <nz-option nzLabel="Nested (JSON)" nzValue="nested"></nz-option> -->
+    </nz-select>
+    <span nz-typography class="blue"> Launch TF-NG-FORM: </span>
+    <button nz-button nzSize="medium" class="outline-blue" [disabled]="!selectedDataType" (click)="showForm()">Show form</button>
+
+    <button nz-button nzSize="small" class="show-source-json aqua" (click)="onShowSourceData()" [disabled]="!selectedDataLoaded">
+      <i nz-icon nzType="code" nzTheme="outline"></i>
+    </button>
+
+  </tf-ng-card-content>
+
+
+
+</tf-ng-card>
+
+<tf-ng-form></tf-ng-form>

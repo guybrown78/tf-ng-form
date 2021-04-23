@@ -1,0 +1,38 @@
+[
+  {
+    "name":"Back to Transform Hub",
+    "code":"t",
+    "status":"HOME",
+    "url":"#"
+  },
+  {
+    "name":"Competance Management",
+    "code":"lm",
+    "status":"LIVE",
+    "url":"#"
+  },
+  {
+    "name":"Learning Management",
+    "code":"lm",
+    "status":"LIVE",
+    "url":"#"
+  },
+  {
+    "name":"Training Management",
+    "code":"tm",
+    "status":"LIVE",
+    "url":"#"
+  },
+  {
+    "name":"R3 Demo",
+    "code":"r3",
+    "status":"DISCOVER",
+    "url":"#"
+  },
+  {
+    "name":"VR Digital Twin Preview",
+    "code":"vr",
+    "status":"DISCOVER",
+    "url":"#"
+  }
+]

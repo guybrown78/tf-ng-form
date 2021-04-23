@@ -1,0 +1,49 @@
+<tf-ng-header
+  [show-app-details]="true"
+  [is-logo-clickable]="true"
+  [app-logo-size]="'m'"
+  app-code="T"
+  app-title="Example App title"
+  [visually-display-app-title]="titleVisible"
+  [show-app-icon]="true"
+>
+
+  <div
+    headerIcons
+  >
+    <tf-ng-hexagon
+      size="m"
+      colour="aqua"
+      outline-colour="aqua"
+      (click)="onHeaderIconClicked()"
+    >
+    </tf-ng-hexagon>
+  </div>
+
+	<tf-ng-hexagon
+		size="l"
+		colour="aqua"
+		outline-colour="aqua"
+		quickLinks
+	>
+	</tf-ng-hexagon>
+
+  <tf-ng-client-logo
+    id="tfAppHeaderClientLogo"
+		clientLogo
+		client-logo-source="https://logodix.com/logo/80482.png"
+    show-user-account="true"
+    icon="logout"
+    [show-dropdown]="false"
+    [is-open]="isUserAccountsMenuOpen"
+		(is-open-clicked)="onUserAccountsMenuToggle($event)"
+
+	>
+		<ul userAccountMenu>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+	</tf-ng-client-logo>
+
+</tf-ng-header>
