@@ -27,6 +27,8 @@ import { FormlyNgZorroAntdModule } from '@ngx-formly/ng-zorro-antd';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FormDashboardComponent } from './pages/form-dashboard/form-dashboard.component';
 import { DefaultDataComponent } from './pages/form-dashboard/default-data.component';
+import { CreateJsonComponent } from './pages/create-json/create-json.component';
+import { FromStateComponent } from './pages/form-dashboard/from-state.component';
 
 
 
@@ -40,6 +42,8 @@ registerLocaleData(en);
     DashboardComponent,
     FormDashboardComponent,
     DefaultDataComponent,
+    CreateJsonComponent,
+    FromStateComponent,
 
   ],
   imports: [

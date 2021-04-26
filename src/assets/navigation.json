@@ -14,5 +14,15 @@
     "routerLink":"/form-default",
     "title":"Form input components",
     "label":"Form Renderer (Default data)"
+  },
+  {
+    "routerLink":"/create-json",
+    "title":"Create JSON",
+    "label":"Create form JSON"
+  },
+  {
+    "routerLink":"/form-state",
+    "title":"State memory",
+    "label":"Form from state memory"
   }
 ]
