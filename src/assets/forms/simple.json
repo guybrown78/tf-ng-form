@@ -13,7 +13,7 @@
         "label":"My Input",
         "placeholder":"Input placeholder",
         "required":true,
-        "description":"%3Ch1%3EThe%20Input%21%3C%2Fh1%3E%0A%3Ch2%3EHow%20to%20use%20the%20input%3A%3C%2Fh2%3E%0A%3Cp%3EType%20with%20one%20finger%2C%20very%20carefully%2C%20one%20letter%20at%20a%20time%20to%20form%20a%20word%3C%2Fp%3E%0A%3Ch4%3E%3Cspan%20style%3D%22color%3A%20%23ff0000%3B%22%3ESome%20useful%20tips%3A%3C%2Fspan%3E%3C%2Fh4%3E%0A%3Cp%3ETry%20sticking%20your%20tongue%20out%20%3A%29%3C%2Fp%3E",
+        "description":"%3Cp%3EHello%2C%20this%20is%20%3Cstrong%3Ebold%3C%2Fstrong%3E%2C%20this%20is%20%3Cem%3Eitalic%3C%2Fem%3E%20and%20this%20is%20%3Cu%3Eunderlined%3C%2Fu%3E.%20All%20of%20them%20looks%20like%20%3Cstrong%3E%3Cem%3E%3Cu%3Ethis%3C%2Fu%3E%3C%2Fem%3E%3C%2Fstrong%3E%3C%2Fp%3E",
         "tooltip":"Howdo, this is how you use a input"
       }
     },
