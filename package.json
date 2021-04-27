@@ -21,6 +21,7 @@
     "@angular/router": "~11.2.6",
     "@ngx-formly/core": "^5.10.18",
     "@ngx-formly/ng-zorro-antd": "^6.0.0-next.1",
+    "angular-froala-wysiwyg": "^3.2.6-1",
     "ng-zorro-antd": "^11.3.0",
     "rxjs": "~6.6.0",
     "tf-ng-core": "^0.0.36",

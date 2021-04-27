@@ -34,7 +34,9 @@
               }
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "./node_modules/froala-editor/css/froala_editor.pkgd.min.css",
+              "./node_modules/froala-editor/css/froala_style.min.css"
             ],
             "scripts": []
           },

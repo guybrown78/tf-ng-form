@@ -24,14 +24,16 @@ import { FormlyModule } from '@ngx-formly/core';
 import { FormlyNgZorroAntdModule } from '@ngx-formly/ng-zorro-antd';
 
 
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+
+
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FormDashboardComponent } from './pages/form-dashboard/form-dashboard.component';
 import { DefaultDataComponent } from './pages/form-dashboard/default-data.component';
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
 import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
-
-
+import { RichTextComponent } from './pages/editor/rich-text/rich-text.component'
 
 registerLocaleData(en);
 
@@ -46,7 +48,7 @@ registerLocaleData(en);
     CreateJsonComponent,
     FromStateComponent,
     AutoSaveComponent,
-
+    RichTextComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +61,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot()
   ],
   providers: [{ provide: NZ_I18N, useValue: en_GB }],
   bootstrap: [AppComponent]

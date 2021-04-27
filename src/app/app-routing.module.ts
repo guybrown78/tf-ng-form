@@ -8,6 +8,8 @@ import { FromStateComponent } from './pages/form-dashboard/from-state.component'
 import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component'
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 
+import { RichTextComponent } from './pages/editor/rich-text/rich-text.component'
+
 const routes: Routes = [
   // { path:"", component:FormDashboardComponent, data:{}},
   { path:"home", component:DashboardComponent, data:{}},
@@ -28,7 +30,7 @@ const routes: Routes = [
     quickLinks:[]
 	}},
 	{ path: 'reactive-form', component: FormDashboardComponent, data:{} },
-
+  { path: 'rich-text', component: RichTextComponent},
   { path: '**', redirectTo: '/form', pathMatch: 'full' },
 ];
 

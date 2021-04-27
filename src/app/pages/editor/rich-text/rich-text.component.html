@@ -1,0 +1,31 @@
+
+<tf-ng-card>
+
+  <h4 nz-typography>Rich Text Editor</h4>
+
+  <!-- <tf-ng-card-content> -->
+    <div
+      [froalaEditor]="froalaOptions"
+      [(froalaModel)]="froalaContent"
+    >
+    </div>
+  <!-- </tf-ng-card-content> -->
+  <div class="btn-footer">
+    <button nz-button nzSize="small" class="outline-blue" (click)="onShowCode()">
+      show code value
+    </button>
+    <button nz-button nzSize="small" class="blue" (click)="onShowSanitized()">
+      show sanitized/encoded value
+    </button>
+  </div>
+</tf-ng-card>
+
+
+<tf-ng-card>
+
+  <h4 nz-typography>After sanitized</h4>
+  <tf-ng-card-content>
+    <div [innerHTML]="decodeRichText(encodedContent)">
+    </div>
+  </tf-ng-card-content>
+</tf-ng-card>
