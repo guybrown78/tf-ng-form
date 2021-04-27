@@ -9,7 +9,7 @@ import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component'
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 
 const routes: Routes = [
-  { path:"", component:DashboardComponent, data:{}},
+  // { path:"", component:FormDashboardComponent, data:{}},
   { path:"home", component:DashboardComponent, data:{}},
   { path:"form-default", component:DefaultDataComponent, data:{}},
   { path:"create-json", component:CreateJsonComponent, data:{}},
@@ -29,7 +29,7 @@ const routes: Routes = [
 	}},
 	{ path: 'reactive-form', component: FormDashboardComponent, data:{} },
 
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/form', pathMatch: 'full' },
 ];
 
 @NgModule({

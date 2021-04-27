@@ -1,11 +1,5 @@
 [
   {
-    "label":"Dashboard",
-    "title":"",
-    "hasSub":false,
-    "routerLink":"/home"
-  },
-  {
     "routerLink":"/form",
     "title":"Form input components",
     "label":"Form Renderer Example"
