@@ -9,6 +9,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
     <tf-ng-card>
       <tf-ng-card-content>
         <h4 nz-typography class="blue">Autosave Form</h4>
+        <p nz-typography>If <span class="blue italic">allowAutoSave</span> is set in the TfNgFormService, the rendered form will check the validation on each field that is updated. If the field is valid, the rendered form will emit the <span class="blue italic">autosave</span> observable passing the updated model</p>
       </tf-ng-card-content>
     </tf-ng-card>
     <tf-ng-form></tf-ng-form>
@@ -25,7 +26,7 @@ export class AutoSaveComponent implements OnInit {
 
   ngOnInit(): void {
     this.formService.allowAutoSave = true;
-    this.formService.getData('assets/forms/simple.json').subscribe(data => {
+    this.formService.getData('assets/forms/simple-validation.json').subscribe(data => {
 
       this.autosaveSubscription = this.formService.autosave.subscribe(
         autosaveJSON => {

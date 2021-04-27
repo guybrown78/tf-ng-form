@@ -1,0 +1,104 @@
+{
+  "meta":{
+    "title":"Simple Validation",
+    "version":1,
+    "description":"Lorum ipsum ...",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"name",
+      "type":"input",
+      "templateOptions":{
+        "label":"Name (required)",
+        "required":true
+      }
+    },
+    {
+      "key":"age",
+      "type":"input",
+      "templateOptions":{
+        "label":"Age (min= 18, max= 40)",
+        "type":"number",
+        "min":18,
+        "max":40,
+        "required":true
+      }
+    },
+    {
+      "key":"password",
+      "type":"input",
+      "templateOptions":{
+        "label":"Password (minLength = 6)",
+        "type":"password",
+        "required":true,
+        "minLength":6
+      }
+    },
+    {
+      "key":"comment",
+      "type":"textarea",
+      "templateOptions":{
+        "label":"Comment (maxLength = 100)",
+        "required":true,
+        "maxLength":100,
+        "rows":5
+      }
+    },
+    {
+      "key":"privacy",
+      "type":"checkbox",
+      "templateOptions":{
+        "label":"Agree to privacy statement"
+      }
+    },
+    {
+      "key":"marketing",
+      "type":"select",
+      "templateOptions":{
+        "label":"Marketing",
+        "placeholder":"Select placeholder",
+        "required":true,
+        "options":[
+          {
+            "label":"Email",
+            "value":"email"
+          },
+          {
+            "label":"Telephone",
+            "value":"telephone"
+          },
+          {
+            "label":"SMS",
+            "value":"sms"
+          }
+        ]
+      }
+    },
+    {
+      "key":"gender",
+      "type":"radio",
+      "templateOptions":{
+        "label":"Gender",
+        "required":true,
+        "options":[
+          {
+            "label":"Male",
+            "value":"male"
+          },
+          {
+            "label":"Female",
+            "value":"femal"
+          },
+          {
+            "label":"Other",
+            "value":"other"
+          }
+        ]
+      }
+    }
+  ],
+  "model":{
+
+  }
+}
