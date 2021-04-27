@@ -4,7 +4,6 @@
     <nz-select nzPlaceHolder="Select data..." [(ngModel)]="selectedDataType" (ngModelChange)="onChange($event)" >
       <nz-option nzLabel="Simple" nzValue="simple"></nz-option>
       <nz-option nzLabel="Simple Validation" nzValue="simple-validation"></nz-option>
-      <!-- <nz-option nzLabel="Nested (JSON)" nzValue="nested"></nz-option> -->
     </nz-select>
     <span nz-typography class="blue"> Launch TF-NG-FORM: </span>
     <button nz-button nzSize="medium" class="outline-blue" [disabled]="!selectedDataType" (click)="showForm()">Show form</button>
