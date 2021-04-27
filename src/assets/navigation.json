@@ -24,5 +24,10 @@
     "routerLink":"/form-state",
     "title":"State memory",
     "label":"Form from state memory"
+  },
+  {
+    "routerLink":"/auto-save",
+    "title":"Autosave form",
+    "label":"Autosave Form"
   }
 ]

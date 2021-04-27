@@ -29,6 +29,7 @@ import { FormDashboardComponent } from './pages/form-dashboard/form-dashboard.co
 import { DefaultDataComponent } from './pages/form-dashboard/default-data.component';
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
+import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
 
 
 
@@ -44,6 +45,7 @@ registerLocaleData(en);
     DefaultDataComponent,
     CreateJsonComponent,
     FromStateComponent,
+    AutoSaveComponent,
 
   ],
   imports: [
