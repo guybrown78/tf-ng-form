@@ -1,0 +1,64 @@
+{
+  "meta":{
+    "title":"Address",
+    "version":"1",
+    "description":"Lorum ipsum ...",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"workAddress",
+      "type":"address",
+      "templateOptions":{
+        "label":"Work address",
+        "addText":"Work address"
+      },
+      "fieldGroup":[
+        {
+          "type":"input",
+          "key":"addressLine1",
+          "templateOptions":{
+            "label":"Address Line 1",
+            "required":true
+          }
+        },
+        {
+          "type":"input",
+          "key":"addressLine2",
+          "templateOptions":{
+            "label":"Address Line 2"
+          }
+        },
+        {
+          "type":"input",
+          "key":"town",
+          "templateOptions":{
+            "label":"Town",
+            "required":true
+          }
+        },
+        {
+          "type":"input",
+          "key":"county",
+          "templateOptions":{
+            "label":"County",
+            "required":true
+          }
+        },
+        {
+          "type":"input",
+          "key":"postcode",
+          "templateOptions":{
+            "label":"Postcode",
+            "required":true
+          }
+        }
+      ]
+    }
+  ],
+  "model":{
+    "workAddress":{
+      "town":"Boro"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "meta":{
+    "title":"Expression",
+    "version":1,
+    "description":"This shows features like expressionProperties and validators in a string form.",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"firstName",
+      "type":"input",
+      "templateOptions":{
+        "label":"First Name"
+      }
+    },
+    {
+      "key":"lastName",
+      "type":"input",
+      "templateOptions":{
+        "label":"Last Name"
+      }
+    },
+    {
+      "key":"mac",
+      "type":"input",
+      "templateOptions":{
+        "label":"Mac Address",
+        "pattern":"([0-9A-F]{2}[:-]){5}([0-9A-F]{2})"
+      },
+      "validation": {
+        "messages": {
+          "pattern": "You need to add a proper MAC Address. For Example: 0A-1B-2C-3D-4E-5F"
+        }
+      }
+    },
+    {
+      "key":"color",
+      "type":"radio",
+      "templateOptions":{
+        "label":"Color Preference (try this out)",
+        "options":[
+          {
+            "label":"No Preference",
+            "value":null
+          },
+          {
+            "label":"Green",
+            "value":"green"
+          },
+          {
+            "label":"Blue",
+            "value":"blue"
+          }
+        ]
+      }
+    },
+    {
+      "key":"reason",
+      "type":"textarea",
+      "templateOptions":{
+        "label":"Why?"
+      },
+      "expressionProperties":{
+        "templateOptions.label":"'Why did you choose ' + model.color + '?'"
+      },
+      "hideExpression":"!model.color"
+    }
+  ],
+  "model":{
+    "firstName": "Ant",
+    "lastName": "N'Dec"
+  }
+}
