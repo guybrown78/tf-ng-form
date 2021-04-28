@@ -25,7 +25,7 @@
     "ng-zorro-antd": "^11.3.0",
     "rxjs": "~6.6.0",
     "tf-ng-core": "^0.0.36",
-    "tf-ng-form": "^0.0.5",
+    "tf-ng-form": "^0.0.6",
     "tf-ng-nz": "^0.0.2",
     "tf-ng-zorro-theme": "^1.0.22",
     "tslib": "^2.0.0",
