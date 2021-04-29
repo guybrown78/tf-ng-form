@@ -11,8 +11,8 @@
       "type":"input",
       "templateOptions":{
         "label":"Delegates name",
-        "placeholder":"Enter your name",
-        "description":"%3Cp%3EThis%20is%20the%20name%20you%20will%20be%20referred%20by%20%3Cstrong%3Ethroughout%3C%2Fstrong%3E%20your%20course%26%23160%3B%3C%2Fp%3E"
+        "placeholder":"Anyone can enter a name",
+        "description":"%3Cp%3ENo%3Cspan%3E%26%23160%3B%3Cstrong%3Epermissions%3C%2Fstrong%3E%20or%20%3Cstrong%3EreadonlyPermissions%3C%2Fstrong%3E%20set%3C%2Fspan%3E%3C%2Fp%3E"
       }
     },
     {
@@ -20,7 +20,8 @@
       "type":"input",
       "templateOptions":{
         "label":"Delegates Email",
-        "placeholder":"Enter your name",
+        "placeholder":"Only a level 1 (delegate) can edit this",
+        "description":"%3Cp%3E%3Cspan%3E%3Cstrong%3Epermissions%26%23160%3B%3C%2Fstrong%3Eset%20to%20%3Cstrong%3E%5B0%2C1%2C2%5D%3C%2Fstrong%3E%20(%5BDelegate%2C%20Assessor%2C%20Verifier%5D)%20-%20visible%20to%20all.%20r%3Cstrong%3EeadonlyPermissions%3C%2Fstrong%3E%20set%20to%20%3Cstrong%3E%5B%3C%2Fstrong%3E%3Cstrong%3E1%2C2%5D%3C%2Fstrong%3E%20(%5B%3Cspan%3EAssessor%2C%20Verifier%3C%2Fspan%3E%5D)%20-%20only%20editable%20by%20Delegate%3C%2Fspan%3E%3C%2Fp%3E",
         "permissions": [0,1,2],
         "readonlyPermissions": [1,2]
       }
@@ -30,8 +31,8 @@
       "type":"input",
       "templateOptions":{
         "label":"Assessor name",
-        "placeholder":"Assessed by",
-        "description":"%3Cp%3E%3Cspan%3EInternal%20observing%20assessor%20will%20make%20notes%20throughout%2C%20shared%20only%20with%20the%20HR%20department.%20%3Cstrong%3ERead%20Only%3C%2Fstrong%3E%20for%20the%20delegate%3C%2Fspan%3E%3C%2Fp%3E",
+        "placeholder":"Anyone higher than level 1 (Delegate) can edit this",
+        "description":"%3Cp%3E%3Cspan%3ENo%20%3Cstrong%3Epermissions%26%23160%3B%3C%2Fstrong%3Eset%20-%20visible%20to%20all.%20r%3Cstrong%3EeadonlyPermissions%3C%2Fstrong%3E%20set%20to%20%3Cstrong%3E%5B0%3C%2Fstrong%3E%3Cstrong%3E%5D%3C%2Fstrong%3E%20(%5BDelegate%5D)%20-%20editable%20by%20All%20except%20Delegate%3C%2Fspan%3E%3C%2Fp%3E",
         "readonlyPermissions": [0]
       }
     },
@@ -40,8 +41,8 @@
       "type":"textarea",
       "templateOptions":{
         "label":"Delegates Knowledge",
-        "placeholder":"Describe the Deleagtes natural understanding of the subject",
-        "description":"%3Cp%3EThis%20is%20%3Cstrong%3EONLY%3C%2Fstrong%3E%20seen%20by%20you%2C%20the%20assessor%3C%2Fp%3E",
+        "placeholder":"Only a level 1 (Assessor) can edit this",
+        "description":"%3Cp%3E%3Cspan%3E%3Cstrong%3Epermissions%26%23160%3B%3C%2Fstrong%3Eset%20to%20%3Cstrong%3E%5B1%2C2%5D%3C%2Fstrong%3E%20-%20visible%20to%20only%20Assessor%20and%20Verifier.%20r%3Cstrong%3EeadonlyPermissions%3C%2Fstrong%3E%20set%20to%20%3Cstrong%3E%5B2%3C%2Fstrong%3E%3Cstrong%3E%5D%3C%2Fstrong%3E%20(%5BVerifier%5D)%20-%20editable%20by%20only%20by%20Assessor%3C%2Fspan%3E%3C%2Fp%3E",
         "permissions": [1,2],
         "readonlyPermissions": [2]
       }
@@ -51,8 +52,8 @@
       "type":"textarea",
       "templateOptions":{
         "label":"Assessors Knowledge",
-        "placeholder":"Describe the Assessors assessing skills",
-        "description":"",
+        "placeholder":"Only visible to a level 2 (Verifier)",
+        "description":"%3Cp%3E%3Cspan%3E%3Cstrong%3Epermissions%26%23160%3B%3C%2Fstrong%3Eset%20to%20%3Cstrong%3E%5B2%5D%3C%2Fstrong%3E%20-%20visible%20to%20only%20Verifier%3C%2Fspan%3E%3C%2Fp%3E",
         "permissions": [2]
       }
     }
