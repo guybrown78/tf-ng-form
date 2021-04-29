@@ -5,7 +5,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FormDashboardComponent } from './pages/form-dashboard/form-dashboard.component';
 import { DefaultDataComponent } from './pages/form-dashboard/default-data.component';
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
-import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component'
+import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
+import { PermissionsComponent } from './pages/form-dashboard/permissions.component'
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 
 import { RichTextComponent } from './pages/editor/rich-text/rich-text.component'
@@ -17,6 +18,10 @@ const routes: Routes = [
   { path:"create-json", component:CreateJsonComponent, data:{}},
   { path:"form-state", component:FromStateComponent, data:{}},
   { path:"auto-save", component:AutoSaveComponent, data:{}},
+
+  { path:"permissions", component:PermissionsComponent, data:{}},
+
+
   { path:"form", component:FormDashboardComponent, data:{}},
   { path: 'inputs', component: FormDashboardComponent, data:{} },
 	{ path: 'file-select', component: FormDashboardComponent, data:{} },

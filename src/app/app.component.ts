@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { QuickLinksItem, QuickLinksService, AppHeaderService } from 'tf-ng-nz';
-
+import { TfNgFormPermissionService, TfNgFormPermissionInterface } from 'tf-ng-form';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +26,8 @@ export class AppComponent implements OnInit{
 
   constructor(
     private quickLinksService:QuickLinksService,
-    private appHeaderService:AppHeaderService
+    private appHeaderService:AppHeaderService,
+    private formPermissionService:TfNgFormPermissionService,
   ) {}
 
   ngOnInit(): void {
@@ -69,6 +70,14 @@ export class AppComponent implements OnInit{
         console.log("Sign out confirmed, tell identity")
       }
     );
+
+    //
+    this.formPermissionService.setUserPermissions([
+      { label:"Delegate", level:0 },
+      { label:"Accessor", level:1 },
+      { label:"Verifier", level:2 },
+      { label:"IQA", level:3 }
+    ])
   }
 
   onQuickLinkItemClicked(item:QuickLinksItem){

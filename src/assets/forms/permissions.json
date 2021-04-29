@@ -10,9 +10,19 @@
       "key":"name",
       "type":"input",
       "templateOptions":{
-        "label":"Name",
+        "label":"Delegates name",
         "placeholder":"Enter your name",
         "description":"%3Cp%3EThis%20is%20the%20name%20you%20will%20be%20referred%20by%20%3Cstrong%3Ethroughout%3C%2Fstrong%3E%20your%20course%26%23160%3B%3C%2Fp%3E"
+      }
+    },
+    {
+      "key":"email",
+      "type":"input",
+      "templateOptions":{
+        "label":"Delegates Email",
+        "placeholder":"Enter your name",
+        "permissions": [0,1,2],
+        "readonlyPermissions": [1,2]
       }
     },
     {
@@ -22,7 +32,7 @@
         "label":"Assessor name",
         "placeholder":"Assessed by",
         "description":"%3Cp%3E%3Cspan%3EInternal%20observing%20assessor%20will%20make%20notes%20throughout%2C%20shared%20only%20with%20the%20HR%20department.%20%3Cstrong%3ERead%20Only%3C%2Fstrong%3E%20for%20the%20delegate%3C%2Fspan%3E%3C%2Fp%3E",
-        "readOnly": ["assessor"]
+        "readonlyPermissions": [0]
       }
     },
     {
@@ -32,7 +42,18 @@
         "label":"Delegates Knowledge",
         "placeholder":"Describe the Deleagtes natural understanding of the subject",
         "description":"%3Cp%3EThis%20is%20%3Cstrong%3EONLY%3C%2Fstrong%3E%20seen%20by%20you%2C%20the%20assessor%3C%2Fp%3E",
-        "permissions": ["assessor"]
+        "permissions": [1,2],
+        "readonlyPermissions": [2]
+      }
+    },
+    {
+      "key":"assessorKnowledge",
+      "type":"textarea",
+      "templateOptions":{
+        "label":"Assessors Knowledge",
+        "placeholder":"Describe the Assessors assessing skills",
+        "description":"",
+        "permissions": [2]
       }
     }
   ],
