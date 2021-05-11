@@ -34,7 +34,8 @@ import { CreateJsonComponent } from './pages/create-json/create-json.component';
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
 import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
 import { RichTextComponent } from './pages/editor/rich-text/rich-text.component';
-import { PermissionsComponent } from './pages/form-dashboard/permissions.component'
+import { PermissionsComponent } from './pages/form-dashboard/permissions.component';
+import { GridsComponent } from './pages/grids/grids.component'
 
 registerLocaleData(en);
 
@@ -50,7 +51,8 @@ registerLocaleData(en);
     FromStateComponent,
     AutoSaveComponent,
     RichTextComponent,
-    PermissionsComponent
+    PermissionsComponent,
+    GridsComponent
   ],
   imports: [
     BrowserModule,

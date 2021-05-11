@@ -7,6 +7,8 @@ import { DefaultDataComponent } from './pages/form-dashboard/default-data.compon
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
 import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
 import { PermissionsComponent } from './pages/form-dashboard/permissions.component'
+import { GridsComponent } from './pages/grids/grids.component'
+
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 
 import { RichTextComponent } from './pages/editor/rich-text/rich-text.component'
@@ -20,7 +22,7 @@ const routes: Routes = [
   { path:"auto-save", component:AutoSaveComponent, data:{}},
 
   { path:"permissions", component:PermissionsComponent, data:{}},
-
+  { path:"grids", component:GridsComponent, data:{}},
 
   { path:"form", component:FormDashboardComponent, data:{}},
   { path: 'inputs', component: FormDashboardComponent, data:{} },

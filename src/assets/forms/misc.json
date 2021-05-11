@@ -1,0 +1,164 @@
+{
+  "meta":{
+    "title":"Misc",
+    "version":"1",
+    "description":"Lorum ipsum ...",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"rate",
+      "type":"rate",
+      "wrappers": ["form-field"],
+      "templateOptions":{
+        "label":"Rate"
+      }
+    },
+    {
+      "key":"rateAssesor",
+      "type":"rate",
+      "wrappers": ["form-field"],
+      "templateOptions":{
+        "description":"%3Cp%3EAllow%20half%20ratings%20%3Cstrong%3EallowHalf%3C%2Fstrong%3E%3C%2Fp%3E",
+        "tooltip":"This is anonymous",
+        "label":"Rate your assessor",
+        "rateOptions":{
+          "allowHalf":true
+        }
+      }
+    },
+    {
+      "type": "switch",
+      "key": "notifications",
+      "wrappers": ["form-field"],
+      "templateOptions": {
+        "label": "Turn on notifications"
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "otherToo",
+      "templateOptions": {
+        "label": "Other Checkbox"
+      }
+    },
+    {
+      "key":"color",
+      "type":"checkbox-group",
+      "wrappers": ["form-field"],
+      "templateOptions":{
+        "label":"Color Preference",
+        "required":true,
+        "options":[
+          {
+            "label":"Pink",
+            "value":"pink"
+          },
+          {
+            "label":"Green",
+            "value":"green"
+          },
+          {
+            "label":"Blue",
+            "value":"blue"
+          },
+          {
+            "label":"Red",
+            "value":"red"
+          },
+          {
+            "label":"Yellow",
+            "value":"yellow"
+          },
+          {
+            "label":"Purple",
+            "value":"purple"
+          },
+          {
+            "label":"Orange",
+            "value":"orange"
+          }
+        ]
+      }
+    },
+    {
+      "key":"color",
+      "type":"checkbox-group",
+      "wrappers": ["form-field"],
+      "templateOptions":{
+        "label":"Allowed ways to contact you",
+        "required":true,
+        "description":"Click all that apply",
+        "checkboxOptions":{
+          "layout":"vertical"
+        },
+        "options":[
+          {
+            "label":"Phone",
+            "value":"phone"
+          },
+          {
+            "label":"SMS",
+            "value":"sms"
+          },
+          {
+            "label":"Whatsapp",
+            "value":"Whatsapp"
+          },
+          {
+            "label":"Email",
+            "value":"email"
+          },
+          {
+            "label":"Post",
+            "value":"post"
+          },
+          {
+            "label":"Twitter",
+            "value":"twitter"
+          },
+          {
+            "label":"LinkedIn",
+            "value":"linkedIn"
+          }
+        ]
+      }
+    },
+    {
+      "key":"animal",
+      "type":"checkbox-group",
+      "wrappers": ["form-field"],
+      "templateOptions":{
+        "label":"Your favourite pet",
+        "required":true,
+        "checkboxOptions":{
+          "layout":"vertical",
+          "showBlocks":true
+        },
+        "options":[
+          {
+            "label":"Dog",
+            "value":"dog",
+            "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheconversation.com%2Fhong-kong-dog-causes-panic-but-heres-why-you-neednt-worry-about-pets-spreading-covid-19-133304&psig=AOvVaw2AkJnQol4i9D_aeYcB-67Y&ust=1620808495959000&source=images&cd=vfe&ved=2ahUKEwj637ymnMHwAhULYBQKHWVIA5YQjRx6BAgAEAc"
+          },
+          {
+            "label":"Cat",
+            "value":"cat",
+            "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fgrumpy-cat-obit%2F&psig=AOvVaw25Lo2OOiM-Yo6QbOqy9mfZ&ust=1620808546449000&source=images&cd=vfe&ved=2ahUKEwjzuca-nMHwAhUt2eAKHYLgAsgQjRx6BAgAEAc"
+          },
+          {
+            "label":"Rabbit",
+            "value":"rabbit",
+            "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencenews.org%2Farticle%2Frabbit-handstand-front-paws-gene-defect-video&psig=AOvVaw3VcNOk9RVvIYqNH_LVXzCq&ust=1620808577986000&source=images&cd=vfe&ved=2ahUKEwipoMvNnMHwAhVHweAKHbRvCxQQjRx6BAgAEAc"
+          },
+          {
+            "label":"Badger",
+            "value":"badger",
+            "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Few.com%2Fmusic%2Fqueen-brian-may-heart-attack%2F&psig=AOvVaw1SgZDWtMYBQvjx9J4B2t6Y&ust=1620808664030000&source=images&cd=vfe&ved=2ahUKEwiJ_c72nMHwAhWEwuAKHazvCMIQjRx6BAgAEAc"
+          }
+        ]
+      }
+    }
+  ],
+  "model":{}
+}

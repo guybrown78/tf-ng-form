@@ -1,0 +1,124 @@
+{
+  "meta":{
+    "title":"Grid",
+    "version":"1",
+    "description":"Lorum ipsum ...",
+    "jsonSchema":false
+  },
+  "schema":[
+    {
+      "key":"grid",
+      "type":"grid",
+      "templateOptions":{
+        "label":"Grid 3 12-6-6",
+        "gridOptions":{
+          "columnDefs":[
+            {
+              "headerName":"Name of Investment",
+              "field":"investmentName",
+              "width":12
+            },
+            {
+              "headerName":"Date of Investment",
+              "field":"investmentDate",
+              "width":6
+            },
+            {
+              "headerName":"Stock Identifier",
+              "field":"stockIdentifier",
+              "width":6
+            }
+          ]
+        }
+      },
+      "fieldGroup":[
+        {
+          "type":"grid-row",
+          "key":"row1",
+          "fieldGroup":[
+            {
+              "type":"label",
+              "key":"investmentName",
+              "wrappers": ["grid-cell-field"],
+              "defaultValue":"Lorum ipsum solar dolar",
+              "templateOptions":{
+                "required":true
+              }
+            },
+            {
+              "type":"input",
+              "key":"investmentDate",
+              "wrappers": ["grid-cell-field"],
+              "templateOptions":{
+                "label":"Town",
+                "required":true
+              }
+            },
+            {
+              "type":"input",
+              "key":"stockIdentifier",
+              "wrappers": ["grid-cell-field"],
+              "templateOptions":{
+                "label":"Postcode",
+                "required":true
+              }
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "key":"row2",
+          "fieldGroup":[
+            {
+              "type":"input",
+              "key":"investmentName",
+              "wrappers": ["grid-cell-field"],
+              "parent":"row1",
+              "templateOptions":{
+                "label":"Address Line 1",
+                "required":true
+              }
+            },
+            {
+              "type":"label",
+              "key":"investmentDate",
+              "wrappers": ["grid-cell-field"],
+              "defaultValue":"Boom"
+            },
+            {
+              "type":"input",
+              "key":"stockIdentifier",
+              "wrappers": ["grid-cell-field"],
+              "parent":"row1",
+              "templateOptions":{
+                "label":"Stock Identifier:"
+              }
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "key":"row3",
+          "fieldGroup":[
+            {
+              "type":"input",
+              "key":"investmentName",
+              "wrappers": ["grid-cell-field"]
+            },
+            {
+              "type":"input",
+              "key":"investmentDate",
+              "wrappers": ["grid-cell-field"]
+            },
+            {
+              "type":"input",
+              "key":"stockIdentifier",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model":{}
+}

@@ -1,0 +1,142 @@
+<tf-ng-card>
+  <h4 nz-typography class="blue">Grids</h4>
+  <tf-ng-card-content class="grid-slect-container">
+    <div nz-row>
+      <div nz-col nzSpan="3">2 Cols</div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(2, '12-12')">
+          <div nz-col [nzSpan]="12" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="12" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(2, '16-8')">
+          <div nz-col [nzSpan]="16" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="8" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+      <div nz-col nzSpan="7">
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(2, '8-16')">
+          <div nz-col [nzSpan]="8" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="16" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </tf-ng-card-content>
+
+
+  <tf-ng-card-content class="grid-slect-container">
+    <div nz-row>
+      <div nz-col nzSpan="3">3 Cols</div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(3, '10-10-4')">
+          <div nz-col [nzSpan]="10" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="10" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="4" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(3, '8-8-8')">
+          <div nz-col [nzSpan]="8" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="8" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="8" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+      <div nz-col nzSpan="7">
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(3, '12-6-6')">
+          <div nz-col [nzSpan]="12" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </tf-ng-card-content>
+
+  <tf-ng-card-content class="grid-slect-container">
+    <div nz-row>
+      <div nz-col nzSpan="3">4 Cols</div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(4, '6-6-6-6')">
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="6" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+      <div nz-col nzSpan="7">
+
+        <button nz-button nz-row [nzGutter]="4" nzSize="small" class="outline-blue grid-btn" (click)="onChangeGrid(4, '9-5-5-5')">
+          <div nz-col [nzSpan]="9" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="5" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="5" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+          <div nz-col [nzSpan]="5" class="gutter-row">
+            <div class="bg-blue"></div>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+  </tf-ng-card-content>
+
+  <tf-ng-card-content class="grid-slect-container">
+    <span *ngIf="!gridCol || !gridColSpan" class="grey text-center">Select a grid layout</span>
+    <span *ngIf="gridCol && gridColSpan" class="text-center">Grid of {{ gridCol }} column, with a layout ratio of {{ gridColSpan }}</span>
+  </tf-ng-card-content>
+</tf-ng-card>
+
+<tf-ng-form></tf-ng-form>

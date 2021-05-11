@@ -30,6 +30,11 @@
     "label":"Permissions"
   },
   {
+    "routerLink":"/grids",
+    "title":"Grids",
+    "label":"Grids"
+  },
+  {
     "routerLink":"/rich-text",
     "title":"Rich Text",
     "label":"Edit Rich Text"
