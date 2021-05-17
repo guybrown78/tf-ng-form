@@ -51,7 +51,7 @@
               }
             },
             {
-              "type":"input",
+              "type":"date",
               "key":"investmentDate",
               "wrappers": ["grid-cell-field"],
               "templateOptions":{
@@ -69,7 +69,7 @@
               }
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }
@@ -90,10 +90,10 @@
               }
             },
             {
-              "type":"label",
+              "type":"date",
               "key":"investmentDate",
               "wrappers": ["grid-cell-field"],
-              "defaultValue":"Boom"
+              "defaultValue":"2021-05-26T11:21:34.793Z"
             },
             {
               "type":"input",
@@ -105,7 +105,7 @@
               }
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }
@@ -121,7 +121,7 @@
               "wrappers": ["grid-cell-field"]
             },
             {
-              "type":"input",
+              "type":"date",
               "key":"investmentDate",
               "wrappers": ["grid-cell-field"]
             },
@@ -131,7 +131,7 @@
               "wrappers": ["grid-cell-field"]
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FormDashboardComponent } from './pages/form-dashboard/form-dashboard.component';
 import { DefaultDataComponent } from './pages/form-dashboard/default-data.component';
+import { RealFormComponent } from './pages/form-dashboard/real-form.component'
 import { FromStateComponent } from './pages/form-dashboard/from-state.component';
 import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
 import { PermissionsComponent } from './pages/form-dashboard/permissions.component'
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path:"create-json", component:CreateJsonComponent, data:{}},
   { path:"form-state", component:FromStateComponent, data:{}},
   { path:"auto-save", component:AutoSaveComponent, data:{}},
+  { path:"real", component:RealFormComponent, data:{}},
 
   { path:"permissions", component:PermissionsComponent, data:{}},
   { path:"grids", component:GridsComponent, data:{}},

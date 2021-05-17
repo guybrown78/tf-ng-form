@@ -24,6 +24,21 @@
     "title":"Autosave form",
     "label":"Autosave Form"
   },
+
+  {
+    "label":"Real Forms",
+    "title":"",
+    "hasSub":true,
+    "subItems":[
+      {
+        "routerLink":"/real",
+        "title":"Engineering Service Line CAF",
+        "label":"Engineering Service Line CAF"
+      }
+    ]
+  },
+
+
   {
     "routerLink":"/permissions",
     "title":"Permissions",

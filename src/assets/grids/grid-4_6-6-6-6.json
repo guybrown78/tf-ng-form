@@ -69,7 +69,7 @@
               }
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }
@@ -105,7 +105,7 @@
               }
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }
@@ -131,7 +131,7 @@
               "wrappers": ["grid-cell-field"]
             },
             {
-              "type":"input",
+              "type":"rate",
               "key":"rate",
               "wrappers": ["grid-cell-field"]
             }
