@@ -4,11 +4,22 @@
     "version":"1",
     "description":"Lorum ipsum ...",
     "jsonSchema":false,
-    "showTitle":true
+    "showTitle":true,
+    "formWidth":"large",
+    "showSubmitButton":false,
+    "submitLabel":"Send",
+    "showResetButton":false
   },
   "schema":[
     {
       "type":"tabs",
+      "templateOptions":{
+        "tabsOptions":{
+          "size":"small",
+          "showSubmitButton":true,
+          "submitLabel":"Complete"
+        }
+      },
       "fieldGroup":[
 
         {
@@ -28,7 +39,8 @@
               "key":"idNumber",
               "type":"input",
               "templateOptions":{
-                "label":"ID Number"
+                "label":"ID Number",
+                "tooltip":"Lorum ipsum"
               }
             },
             {
