@@ -13,6 +13,7 @@ import { GridsComponent } from './pages/grids/grids.component'
 import { CreateJsonComponent } from './pages/create-json/create-json.component';
 
 import { RichTextComponent } from './pages/editor/rich-text/rich-text.component'
+import { NewSchemaComponent } from './pages/form-dashboard/new-schema.component';
 
 const routes: Routes = [
   // { path:"", component:FormDashboardComponent, data:{}},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path:"form-state", component:FromStateComponent, data:{}},
   { path:"auto-save", component:AutoSaveComponent, data:{}},
   { path:"real", component:RealFormComponent, data:{}},
+  { path:"new-schema", component:NewSchemaComponent, data:{}},
 
   { path:"permissions", component:PermissionsComponent, data:{}},
   { path:"grids", component:GridsComponent, data:{}},

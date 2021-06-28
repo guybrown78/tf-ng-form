@@ -36,7 +36,8 @@ import { AutoSaveComponent } from './pages/form-dashboard/auto-save.component';
 import { RichTextComponent } from './pages/editor/rich-text/rich-text.component';
 import { PermissionsComponent } from './pages/form-dashboard/permissions.component';
 import { GridsComponent } from './pages/grids/grids.component';
-import { RealFormComponent } from './pages/form-dashboard/real-form.component'
+import { RealFormComponent } from './pages/form-dashboard/real-form.component';
+import { NewSchemaComponent } from './pages/form-dashboard/new-schema.component';
 
 registerLocaleData(en);
 
@@ -54,7 +55,8 @@ registerLocaleData(en);
     RichTextComponent,
     PermissionsComponent,
     GridsComponent,
-    RealFormComponent
+    RealFormComponent,
+    NewSchemaComponent,
   ],
   imports: [
     BrowserModule,

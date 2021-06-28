@@ -34,6 +34,11 @@
         "routerLink":"/real",
         "title":"Engineering Service Line CAF",
         "label":"Engineering Service Line CAF"
+      },
+      {
+        "routerLink":"/new-schema",
+        "title":"New Schema",
+        "label":"New Schema"
       }
     ]
   },
