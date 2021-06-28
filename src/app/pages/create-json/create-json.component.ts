@@ -20,20 +20,46 @@ export class CreateJsonComponent implements OnInit {
     title:"Simple",
     version:1,
     description:"Lorum ipsum ...",
-    jsonSchema:false
+    jsonSchema:true
   }
 
   starterSchema = [{
-    key:"input",
-    type:"input",
-    templateOptions:{
-      label:"My Input",
-      placeholder:"Input placeholder",
-      required:true,
-      description:"",
-      tooltip:""
+    "label": "Name",
+    "type": "input"
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "label": "Email",
+    "type": "input",
+    "help":"Lorum ipsum"
+  },
+  {
+    "label":"Function",
+    "type":"radio",
+    "componentOptions":{
+      "options":[
+        {
+          "label":"Originate",
+          "value":"originate"
+        },
+        {
+          "label":"Check",
+          "value":"check"
+        },
+        {
+          "label":"Approve",
+          "value":"approve"
+        },
+        {
+          "label":"Other",
+          "value":"other"
+        }
+      ]
     }
-  }]
+  }
+  ]
 
   constructor(
     private formService:TfNgFormService,
