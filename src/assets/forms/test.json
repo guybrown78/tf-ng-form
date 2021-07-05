@@ -126,7 +126,7 @@
         {
           "type":"radio",
           "label": "Is the candidate competent in the current role?",
-          "componentOptions":{ "options":[ { "label":"Yes", "value":"Yes" }, { "label":"No", "value":"No" }, { "label":"N/A", "value":"NA" }] }        
+          "componentOptions":{ "options":[ { "label":"Yes", "value":"Yes" }, { "label":"No", "value":"No" }, { "label":"N/A", "value":"NA" }] }
         },
         {
           "type":"radio",
@@ -196,6 +196,210 @@
       ]
     },
 
+    {
+      "type":"grid",
+      "label":"Example span colours",
+      "description":"Examples to show how to attach span colour classes from tf-ng-zorro-theme. These can be overriden or made unique",
+      "componentOptions":{
+        "gridOptions":{
+          "columnDefs":[
+            {
+              "field": "title"
+            }
+          ]
+        }
+      },
+      "fieldGroup":[
+
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"blue\">Blue</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"navy\">Navy</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"grey\">Grey / Gray</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"aqua\">Aqua</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"red\">Red</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"green\">Green</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+,
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"yellow\">Yellow</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"orange\">Orange / Amber</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"black\">Black</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"brown\">Brown</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"marron\">Marron</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"olive\">Olive</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"pink\">Pink</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"turqoise\">Turqoise</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"teal\">Teal</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"silver\">Silver</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"gold\">Gold</span></b>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        },
+        {
+          "type":"grid-row",
+          "fieldGroup":[
+            {
+              "type":"text",
+              "description": "<b><span class=\"rebecca-purple\">Unique Class, Rebecca Purple</span></b> <span>(Set in root styles)</span>",
+              "wrappers": ["grid-cell-field"]
+            }
+          ]
+        }
+
+      ]
+    },
 
     {
       "type":"grid",
@@ -227,7 +431,7 @@
               "type":"text",
               "description": "Work activities routine and predicable.Member of a work group assisting others in delivery of objectives.<br><b>Key words:</b> assists, acknowledges, seeks, shows, applies",
               "wrappers": ["grid-cell-field"]
-            }                
+            }
           ]
         },
         {
@@ -242,7 +446,7 @@
               "type":"text",
               "description": "Varied work activities performed in a range of contexts. Some individual responsibility. Limited guidance needed. Results reviewed for quality. Contributes to delivering team or functional objectives. <br><b>Key words:</b> contributes, identifies, anticipates, delivers, shares, recognises",
               "wrappers": ["grid-cell-field"]
-            }                
+            }
           ]
         },
         {
@@ -257,7 +461,7 @@
               "type":"text",
               "description": "Broad range of work in a complex and non-routine context. Significant personal autonomy and team authority. Coordinates and manages work to deliver successful outcomes. <br><b>Key words:</b> manages, encourages, challenges, develops, adapts",
               "wrappers": ["grid-cell-field"]
-            }                
+            }
           ]
         },
         {
@@ -272,10 +476,10 @@
               "type":"text",
               "description": "Complex technical or professional activities in a wide variety of contexts. High confidence in results. Works across the organisation to deliver on operational and strategic objectives. Able to identify capability of others in this activity and is recognised as an authority by company and/or industry peers. <br><b>Key words:</b> champions, inspires, motivates, enables, shapes",
               "wrappers": ["grid-cell-field"]
-            }                
+            }
           ]
         }
-      ]       
+      ]
     },
 
         {
@@ -433,13 +637,17 @@
           ]
         }
 
-      ]       
+      ]
     },
+
+
+
     {
       "key": "Behavioural Competencies (Safety Cacoon - Behavioural Standard)_candidate_comments",
       "label": "Candidate's Comments:",
       "type": "textarea"
     },
+
     {
       "key": "Behavioural Competencies (Safety Cacoon - Behavioural Standard)_assessor_comments",
       "label": "Assessor's Comments:",
@@ -692,7 +900,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Leadership Competencies (Leadership Framework)_candidate_comments",
@@ -1013,7 +1221,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Application skills_candidate_comments",
@@ -1148,7 +1356,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Enabling skills_candidate_comments",
@@ -1345,7 +1553,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Safety by Design_candidate_comments",
@@ -1759,7 +1967,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Draughting Skills_candidate_comments",
@@ -1956,7 +2164,7 @@
           ]
         }
 
-      ]       
+      ]
     },
     {
       "key": "Knowledge - Discipline Appreciation_candidate_comments",
