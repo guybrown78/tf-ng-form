@@ -23,6 +23,7 @@ const routes: Routes = [
   { path:"form-state", component:FromStateComponent, data:{}},
   { path:"auto-save", component:AutoSaveComponent, data:{}},
   { path:"real", component:RealFormComponent, data:{}},
+  { path:"real/:json", component:RealFormComponent, data:{}},
   { path:"new-schema", component:NewSchemaComponent, data:{}},
 
   { path:"permissions", component:PermissionsComponent, data:{}},

@@ -36,6 +36,16 @@
         "label":"Engineering Service Line CAF"
       },
       {
+        "routerLink":"/real/TraineeCAD_Operator_Americas",
+        "title":"TraineeCAD_Operator_Americas",
+        "label":"TraineeCAD_Operator_Americas"
+      },
+      {
+        "routerLink":"/real/test",
+        "title":"test",
+        "label":"test"
+      },
+      {
         "routerLink":"/new-schema",
         "title":"New Schema",
         "label":"New Schema"

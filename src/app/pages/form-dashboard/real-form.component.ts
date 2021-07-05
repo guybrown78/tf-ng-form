@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TfNgFormService, TfNgFormPermissionService, DisplayJsonService } from 'tf-ng-form';
 import { Subscription } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-real-form',
@@ -15,11 +16,22 @@ export class RealFormComponent implements OnInit {
     private formService:TfNgFormService,
     private formPermissionService:TfNgFormPermissionService,
     private displayJsonService:DisplayJsonService,
+    private route:ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     //
-    this.formService.getData('assets/forms/engineeringServiceLineCAF.json').subscribe(data => {
+    this.route.paramMap.subscribe( paramMap => {
+      const json = paramMap.get('json');
+      this.initJson(json)
+    }, err => {
+      this.initJson('engineeringServiceLineCAF')
+    })
+  }
+
+  initJson(json:string){
+    json = json || 'engineeringServiceLineCAF'
+    this.formService.getData(`assets/forms/${json}.json`).subscribe(data => {
       // data has loaded, the formService getData parses the data before it is returned here and stores the formFields, model and meta for the form.
       // only thing left to do is listen for the submit button to be pressed
       this.submittedSubscription = this.formService.submitted.subscribe(
@@ -33,7 +45,6 @@ export class RealFormComponent implements OnInit {
       console.log(err);
     })
   }
-
   onFormSubmitted(json:string){
     console.log(json)
     // for dev purposes, display the json nicely
