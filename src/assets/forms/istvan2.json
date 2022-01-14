@@ -1,0 +1,16 @@
+{
+	"meta": {
+		"title": "Test Form",
+		"showTitle": true,
+		"code": "form-01",
+		"version": "1",
+		"jsonSchema": true,
+    "showResetButton":false
+	},
+	"schema": [{
+		"uuid": "a971b836-f71c-45c5-a2b6-567e7aee44f3",
+		"label": "Text Input",
+		"type": "input"
+	}],
+	"model": {}
+}

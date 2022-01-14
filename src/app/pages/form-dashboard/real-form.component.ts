@@ -48,7 +48,7 @@ export class RealFormComponent implements OnInit {
   onFormSubmitted(json:string){
     console.log(json)
     // for dev purposes, display the json nicely
-    this.displayJsonService.show(json, 'Dedault Data');
+    this.displayJsonService.show(json, 'Default Data');
   }
 
   ngOnDestroy():void {
