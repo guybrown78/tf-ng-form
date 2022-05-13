@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TfNgFormService, DisplayJsonService } from 'tf-ng-form';
+import { TfNgFormService, DisplayJsonService } from '@3t-transform/tf-ng-form';
 import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({

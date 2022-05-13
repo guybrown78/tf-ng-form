@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { QuickLinksItem, QuickLinksService, AppHeaderService } from 'tf-ng-nz';
-import { TfNgFormPermissionService, TfNgFormPermissionInterface } from 'tf-ng-form';
+import { TfNgFormPermissionService, TfNgFormPermissionInterface } from '@3t-transform/tf-ng-form';
 
 @Component({
   selector: 'app-root',

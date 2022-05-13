@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TfNgFormService, DisplayJsonService } from 'tf-ng-form';
+import { TfNgFormService, TfNgFormPermissionService, DisplayJsonService } from '@3t-transform/tf-ng-form';
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 @Component({
@@ -16,11 +16,13 @@ export class FormDashboardComponent implements OnInit {
 
   constructor(
     private formService:TfNgFormService,
+    private formPermissionService:TfNgFormPermissionService,
     private displayJsonService:DisplayJsonService,
   ) { }
 
   ngOnInit(): void {
-
+    // console.log("boom")
+    // this.formPermissionService.formReadOnly = true;
   }
 
   onChange(value:string){

@@ -25,10 +25,10 @@
             {
               "key":"age",
               "type":"input",
+              "required":true,
               "templateOptions":{
                 "type":"number",
-                "label":"Age",
-                "required":true
+                "label":"Age"
               }
             }
           ]
@@ -42,8 +42,7 @@
               "key":"country",
               "type":"input",
               "templateOptions":{
-                "label":"Country",
-                "required":true
+                "label":"Country"
               }
             }
           ]
@@ -58,8 +57,7 @@
               "type":"input",
               "templateOptions":{
                 "type":"date",
-                "label":"Day of the trip",
-                "required":true
+                "label":"Day of the trip"
               }
             }
           ]

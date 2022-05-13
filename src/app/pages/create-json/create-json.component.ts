@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
-import { TfNgFormService, DisplayJsonService } from 'tf-ng-form';
+import { TfNgFormService, DisplayJsonService } from '@3t-transform/tf-ng-form';
 
 @Component({
   selector: 'app-create-json',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TfNgFormService, TfNgFormPermissionService, TfNgFormPermissionInterface, DisplayJsonService } from 'tf-ng-form';
+import { TfNgFormService, TfNgFormPermissionService, TfNgFormPermissionInterface, DisplayJsonService } from '@3t-transform/tf-ng-form';
 import { pipe, Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 

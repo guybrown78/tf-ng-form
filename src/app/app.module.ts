@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { TfNgCoreModule } from 'tf-ng-core';
 import { TfNgNzModule } from 'tf-ng-nz';
-import { TfNgFormModule } from 'tf-ng-form';
+import { TfNgFormModule } from '@3t-transform/tf-ng-form';
 
 
 import { NgZorroModule } from './modules/ng-zorro.module'
